@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanStyle - Премиальная одежда</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .ad-container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            display: flex;
+            transition: all 0.3s ease;
+        }
+        
+        .ad-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .ad-image {
+            flex: 1;
+            background: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+        }
+        
+        .ad-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .ad-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2a3f54;
+            margin-bottom: 15px;
+        }
+        
+        .ad-subtitle {
+            font-size: 16px;
+            color: #5a6d80;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .ad-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #4a6fa5;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .ad-button:hover {
+            background: #3a5a80;
+            transform: translateY(-2px);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2a3f54;
+        }
+        
+        .logo span {
+            color: #4a6fa5;
+        }
+        
+        @media (max-width: 768px) {
+            .ad-container {
+                flex-direction: column;
+            }
+            
+            .ad-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="ad-image"></div>
+        <div class="ad-content">
+            <div class="logo">URBAN<span>STYLE</span></div>
+            <h1 class="ad-title">Новая коллекция премиальной одежды</h1>
+            <p class="ad-subtitle">Откройте для себя последние тенденции сезона. Качественные материалы, стильные решения и неповторимый комфорт.</p>
+            <a href="https://barni0101.github.io/yarik/" class="ad-button">Перейти в магазин</a>
+        </div>
+    </div>
+</body>
+</html>
